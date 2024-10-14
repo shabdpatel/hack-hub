@@ -207,17 +207,7 @@ const App = () => {
 											hackathon.
 										</p>
 									</li>
-									<li>
-										<strong>Is the exam fair?</strong>
-										<p>
-											Yes, the exam is 100% fair. The
-											question paper will be received from
-											our alumni right at the time of the
-											examination to ensure no prior
-											access by anyone, including the
-											organizers.
-										</p>
-									</li>
+
 									<li>
 										<strong>
 											Will I receive a certificate?
