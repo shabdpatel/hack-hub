@@ -139,7 +139,7 @@ const App = () => {
 									students from any year
 								</li>
 								<li>
-									<strong>Registration Fee:</strong>
+									<strong>Registration Fee:</strong>{' '}
 									&#x20B9;150
 								</li>
 							</ul>
