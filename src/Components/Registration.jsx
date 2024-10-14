@@ -146,8 +146,8 @@ const Registration = () => {
 							Unfortunately, the payment could not be processed.
 						</p>
 						<p>
-							Please try again or contact support if the issue
-							persists.
+							Please try again or contact +91 87574 89128, +91
+							80917 48041 if the issue persists.
 						</p>
 					</div>
 				) : null}

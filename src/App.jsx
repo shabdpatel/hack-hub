@@ -118,7 +118,8 @@ const App = () => {
 								</li>
 								<li>
 									<strong>Pattern:</strong> Objective MCQ (200
-									questions, 180 minutes)
+									questions, 180 minutes, 5 subjects, 25%
+									negative marking)
 								</li>
 								<li>
 									<strong>Venue:</strong> NIT Hamirpur Campus
@@ -220,6 +221,13 @@ const App = () => {
 											Yes, students from any year can
 											participate in the hackathon.
 										</p>
+									</li>
+									<li>
+										<strong>
+											In case you have any queries please
+											contact:
+										</strong>
+										<p>+91 87574 89128, +91 80917 48041</p>
 									</li>
 								</ul>
 							</div>
