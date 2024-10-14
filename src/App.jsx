@@ -88,6 +88,15 @@ const App = () => {
 								</p>
 								{/* Fairness Assurance */}
 								<p className="text-lg text-center mb-8">
+									<strong>Registration Fees:</strong>
+									&#x20B9;150 per participant, which will be
+									redistributed among the winners as prizes.
+									This is a non-profit community, and the only
+									purpose of the registration fees is to
+									ensure the commitment of the participants.
+								</p>
+								{/* Fairness Assurance */}
+								<p className="text-lg text-center mb-8">
 									<strong>Fairness Assurance:</strong> To
 									ensure the exam is 100% fair, the question
 									paper will be received from our alumni right
@@ -128,6 +137,10 @@ const App = () => {
 								<li>
 									<strong>Eligibility:</strong> Open to all
 									students from any year
+								</li>
+								<li>
+									<strong>Registration Fee:</strong>
+									&#x20B9;150
 								</li>
 							</ul>
 						</section>
