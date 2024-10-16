@@ -201,31 +201,31 @@ const Dashboard = () => {
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 					{loading
 						? Array(6)
-								.fill()
-								.map((_, index) => (
-									<SkeletonLoader key={index} />
-								))
+							.fill()
+							.map((_, index) => (
+								<SkeletonLoader key={index} />
+							))
 						: registrations.map((registration, index) => (
-								<div
-									key={index}
-									className="bg-[#333333] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
-									<FaUserCircle
-										size={40}
-										className="mx-auto mb-4 text-[#39FF14]"
-									/>
-									<h3 className="text-xl font-bold">
-										{registration.username.length > 12
-											? registration.username.substring(
-													0,
-													12
-											  ) + '...'
-											: registration.username}
-									</h3>
-									<p className="text-sm text-gray-400">
-										Participant #{index + 1}
-									</p>
-								</div>
-						  ))}
+							<div
+								key={index}
+								className="bg-[#333333] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+								<FaUserCircle
+									size={40}
+									className="mx-auto mb-4 text-[#39FF14]"
+								/>
+								<h3 className="text-xl font-bold">
+									{registration.username.length > 12
+										? registration.username.substring(
+											0,
+											12
+										) + '...'
+										: registration.username}
+								</h3>
+								<p className="text-sm text-gray-400">
+									Participant #{index + 1}
+								</p>
+							</div>
+						))}
 				</div>
 			</div>
 		</section>
