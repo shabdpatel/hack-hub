@@ -2,7 +2,6 @@ import React from 'react';
 import { FaTimes, FaArrowLeft } from 'react-icons/fa'; // Add icons for cut button and back button
 
 const ResourceDetail = ({ resourceTitle, handleBack }) => {
-	// Mock data for resource details (you can replace this with actual data)
 	const resourceDetails = {
 		'Object-Oriented Programming (OOPs)': {
 			videos: [
@@ -33,6 +32,78 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 					link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
 				},
 			],
+		},
+		'Operating Systems (OS)': {
+			videos: [
+				{
+					title: 'OOPs Concepts Tutorial',
+					link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
+				},
+				{
+					title: 'OOPs in JavaScript',
+					link: 'https://www.youtube.com/watch?v=zPHerhks2Vg',
+				},
+			],
+			playlists: [
+				{
+					title: 'OOPs Playlist',
+					link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS',
+				},
+			],
+			articles: [
+				{
+					title: 'Introduction to OOPs',
+					link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept/',
+				},
+			],
+			websites: [
+				{
+					title: 'MDN Web Docs - OOPs',
+					link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
+				},
+			],
+		},
+		'Database Management Systems (DBMS)': {
+			videos: [
+				{
+					title: 'OOPs Concepts Tutorial',
+					link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
+				},
+				{
+					title: 'OOPs in JavaScript',
+					link: 'https://www.youtube.com/watch?v=zPHerhks2Vg',
+				},
+			],
+			playlists: [
+				{
+					title: 'OOPs Playlist',
+					link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS',
+				},
+			],
+			articles: [
+				{
+					title: 'Introduction to OOPs',
+					link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept/',
+				},
+			],
+			websites: [
+				{
+					title: 'MDN Web Docs - OOPs',
+					link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
+				},
+			],
+		},
+		'Computer Networks': {
+			videos: [],
+			playlists: [],
+			articles: [],
+			websites: [],
+		},
+		'System Design': {
+			videos: [],
+			playlists: [],
+			articles: [],
+			websites: [],
 		},
 	};
 
@@ -73,7 +144,7 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold mb-4">YouTube Videos</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.resourceTitle.videos.map(
+						{resourceDetails[resourceTitle].videos.map(
 							(video, index) => (
 								<div
 									key={index}
@@ -106,7 +177,7 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 						YouTube Playlists
 					</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.resourceTitle.playlists.map(
+						{resourceDetails[resourceTitle].playlists.map(
 							(playlist, index) => (
 								<div
 									key={index}
@@ -137,7 +208,7 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold mb-4">Articles</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.resourceTitle.articles.map(
+						{resourceDetails[resourceTitle].articles.map(
 							(article, index) => (
 								<div
 									key={index}
@@ -159,7 +230,7 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold mb-4">Websites</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.resourceTitle.websites.map(
+						{resourceDetails[resourceTitle].websites.map(
 							(website, index) => (
 								<div
 									key={index}
