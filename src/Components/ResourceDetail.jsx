@@ -4,34 +4,36 @@ import { FaTimes, FaArrowLeft } from 'react-icons/fa'; // Add icons for cut butt
 const ResourceDetail = ({ resourceTitle, handleBack }) => {
 	// Mock data for resource details (you can replace this with actual data)
 	const resourceDetails = {
-		videos: [
-			{
-				title: 'OOPs Concepts Tutorial',
-				link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
-			},
-			{
-				title: 'OOPs in JavaScript',
-				link: 'https://www.youtube.com/watch?v=zPHerhks2Vg',
-			},
-		],
-		playlists: [
-			{
-				title: 'OOPs Playlist',
-				link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS',
-			},
-		],
-		articles: [
-			{
-				title: 'Introduction to OOPs',
-				link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept/',
-			},
-		],
-		websites: [
-			{
-				title: 'MDN Web Docs - OOPs',
-				link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
-			},
-		],
+		'Object-Oriented Programming (OOPs)': {
+			videos: [
+				{
+					title: 'OOPs Concepts Tutorial',
+					link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
+				},
+				{
+					title: 'OOPs in JavaScript',
+					link: 'https://www.youtube.com/watch?v=zPHerhks2Vg',
+				},
+			],
+			playlists: [
+				{
+					title: 'OOPs Playlist',
+					link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS',
+				},
+			],
+			articles: [
+				{
+					title: 'Introduction to OOPs',
+					link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept/',
+				},
+			],
+			websites: [
+				{
+					title: 'MDN Web Docs - OOPs',
+					link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
+				},
+			],
+		},
 	};
 
 	// Extract YouTube video ID from the URL to generate the thumbnail
@@ -71,26 +73,30 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold mb-4">YouTube Videos</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.videos.map((video, index) => (
-							<div
-								key={index}
-								className="bg-[#222222] p-6 rounded-lg shadow-lg">
-								<a
-									href={video.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="block mb-4">
-									<img
-										src={getYouTubeThumbnail(video.link)}
-										alt={video.title}
-										className="w-full h-48 object-cover rounded-md"
-									/>
-									<p className="text-lg mt-2 hover:underline">
-										{video.title}
-									</p>
-								</a>
-							</div>
-						))}
+						{resourceDetails.resourceTitle.videos.map(
+							(video, index) => (
+								<div
+									key={index}
+									className="bg-[#222222] p-6 rounded-lg shadow-lg">
+									<a
+										href={video.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="block mb-4">
+										<img
+											src={getYouTubeThumbnail(
+												video.link
+											)}
+											alt={video.title}
+											className="w-full h-48 object-cover rounded-md"
+										/>
+										<p className="text-lg mt-2 hover:underline">
+											{video.title}
+										</p>
+									</a>
+								</div>
+							)
+						)}
 					</div>
 				</div>
 
@@ -100,28 +106,30 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 						YouTube Playlists
 					</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.playlists.map((playlist, index) => (
-							<div
-								key={index}
-								className="bg-[#222222] p-6 rounded-lg shadow-lg">
-								<a
-									href={playlist.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="block mb-4">
-									<img
-										src={getYouTubePlaylistThumbnail(
-											playlist.link
-										)}
-										alt={playlist.title}
-										className="w-full h-48 object-cover rounded-md"
-									/>
-									<p className="text-lg mt-2 hover:underline">
-										{playlist.title}
-									</p>
-								</a>
-							</div>
-						))}
+						{resourceDetails.resourceTitle.playlists.map(
+							(playlist, index) => (
+								<div
+									key={index}
+									className="bg-[#222222] p-6 rounded-lg shadow-lg">
+									<a
+										href={playlist.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="block mb-4">
+										<img
+											src={getYouTubePlaylistThumbnail(
+												playlist.link
+											)}
+											alt={playlist.title}
+											className="w-full h-48 object-cover rounded-md"
+										/>
+										<p className="text-lg mt-2 hover:underline">
+											{playlist.title}
+										</p>
+									</a>
+								</div>
+							)
+						)}
 					</div>
 				</div>
 
@@ -129,19 +137,21 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold mb-4">Articles</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.articles.map((article, index) => (
-							<div
-								key={index}
-								className="bg-[#222222] p-6 rounded-lg shadow-lg">
-								<a
-									href={article.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-lg hover:underline">
-									{article.title}
-								</a>
-							</div>
-						))}
+						{resourceDetails.resourceTitle.articles.map(
+							(article, index) => (
+								<div
+									key={index}
+									className="bg-[#222222] p-6 rounded-lg shadow-lg">
+									<a
+										href={article.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="text-lg hover:underline">
+										{article.title}
+									</a>
+								</div>
+							)
+						)}
 					</div>
 				</div>
 
@@ -149,19 +159,21 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold mb-4">Websites</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails.websites.map((website, index) => (
-							<div
-								key={index}
-								className="bg-[#222222] p-6 rounded-lg shadow-lg">
-								<a
-									href={website.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-lg hover:underline">
-									{website.title}
-								</a>
-							</div>
-						))}
+						{resourceDetails.resourceTitle.websites.map(
+							(website, index) => (
+								<div
+									key={index}
+									className="bg-[#222222] p-6 rounded-lg shadow-lg">
+									<a
+										href={website.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="text-lg hover:underline">
+										{website.title}
+									</a>
+								</div>
+							)
+						)}
 					</div>
 				</div>
 
