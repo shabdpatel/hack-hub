@@ -7,7 +7,7 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 		videos: [
 			{
 				title: 'OOPs Concepts Tutorial',
-				link: 'https://youtu.be/6soT3DMBJGQ?si=bjEnamufedgjBSGN',
+				link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
 			},
 			{
 				title: 'OOPs in JavaScript',
