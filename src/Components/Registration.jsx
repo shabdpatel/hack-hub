@@ -29,7 +29,7 @@ const db = getFirestore(app);
 const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }) => {
 	const handleDownloadQRCode = () => {
 		const qrCodeLink = document.createElement('a');
-		qrCodeLink.href = '/qr.jpeg'; // Path to your QR code image
+		qrCodeLink.href = '/qr.png'; // Path to your QR code image
 		qrCodeLink.download = 'GooglePay_QR_Code.jpeg';
 		qrCodeLink.click();
 	};
@@ -39,7 +39,7 @@ const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }
 			<div className="bg-gray-800 p-6 rounded-lg text-center">
 				<h2 className="text-2xl font-semibold mb-2 text-[#39FF14]">Complete Payment via Google Pay</h2>
 				<img
-					src="/qr.jpeg"
+					src="/qr.png"
 					alt="Google Pay QR Code"
 					className="w-60 h-72 mx-auto mb-2"
 				/>
@@ -49,7 +49,7 @@ const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }
 				>
 					<FaDownload className="inline mr-2" />QR Code
 				</button>
-				<p className="text-lg mb-2 text-[#39FF14]">UPI ID: <span className="font-semibold">shabdpatel0@oksbi</span></p>
+				<p className="text-lg mb-2 text-[#39FF14]"><span className="font-semibold">Enter your transaction ID to verify your payment</span></p>
 				<input
 					type="text"
 					placeholder="Enter Transaction ID"
@@ -78,14 +78,14 @@ const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }
 // Success Popup Component
 const SuccessPopup = ({ closePopup }) => {
 	return (
-		<div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-			<div className="bg-gray-800 p-6 m-16 rounded-lg text-center">
-				<p className="text-lg mb-4 text-[#39FF14]">
-					Congratulations! Your registration has been successfully received. We will verify your details, and once confirmed, your participation will be proudly displayed on the dashboard.
+		<div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+			<div className="bg-gray-800 p-6 sm:p-8 md:p-10 rounded-lg text-center max-w-lg w-full mx-4">
+				<p className="text-lg sm:text-xl md:text-2xl mb-4 text-[#39FF14]">
+					Congratulations! Your registration has been successfully received.<br />We will verify your details, and once confirmed, your participation will be proudly displayed on the dashboard.
 				</p>
 				<button
 					onClick={closePopup}
-					className="mt-2 bg-[#39FF14] text-black px-4 py-2 rounded-md"
+					className="mt-2 bg-[#39FF14] text-black px-6 py-2 rounded-md hover:bg-[#32e012] transition-colors duration-200"
 				>
 					Close
 				</button>
@@ -93,7 +93,6 @@ const SuccessPopup = ({ closePopup }) => {
 		</div>
 	);
 };
-
 const Registration = () => {
 	const [formData, setFormData] = useState({
 		name: '',
