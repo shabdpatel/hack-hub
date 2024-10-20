@@ -27,7 +27,6 @@ const db = getFirestore(app);
 
 // QR Code Popup Component
 const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }) => {
-	// Function to download the QR code
 	const handleDownloadQRCode = () => {
 		const qrCodeLink = document.createElement('a');
 		qrCodeLink.href = '/qr.jpeg'; // Path to your QR code image
@@ -76,6 +75,25 @@ const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }
 	);
 };
 
+// Success Popup Component
+const SuccessPopup = ({ closePopup }) => {
+	return (
+		<div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+			<div className="bg-gray-800 p-6 m-16 rounded-lg text-center">
+				<p className="text-lg mb-4 text-[#39FF14]">
+					Congratulations! Your registration has been successfully received. We will verify your details, and once confirmed, your participation will be proudly displayed on the dashboard.
+				</p>
+				<button
+					onClick={closePopup}
+					className="mt-2 bg-[#39FF14] text-black px-4 py-2 rounded-md"
+				>
+					Close
+				</button>
+			</div>
+		</div>
+	);
+};
+
 const Registration = () => {
 	const [formData, setFormData] = useState({
 		name: '',
@@ -88,7 +106,7 @@ const Registration = () => {
 
 	const [showPopup, setShowPopup] = useState(false);
 	const [transactionId, setTransactionId] = useState('');
-	const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+	const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -120,11 +138,24 @@ const Registration = () => {
 				transactionId,
 			});
 			setShowPopup(false);
-			setShowSuccessMessage(true);
+			setShowSuccessPopup(true);
+			resetForm();
 		} catch (error) {
 			console.error('Error adding document: ', error);
 			alert('Failed to register, please try again.');
 		}
+	};
+
+	const resetForm = () => {
+		setFormData({
+			name: '',
+			email: '',
+			username: '',
+			rollNo: '',
+			whatsapp: '',
+			transactionId: '',
+		});
+		setTransactionId('');
 	};
 
 	return (
@@ -133,12 +164,6 @@ const Registration = () => {
 				<h1 className="text-4xl font-bold text-center mb-8">
 					Register for the Hackathon
 				</h1>
-
-				{showSuccessMessage && (
-					<div className="bg-[#333333] text-[#39FF14] p-4 mb-6 rounded-md text-center">
-						Congratulations! We will add your participation after verifying your details.
-					</div>
-				)}
 
 				<form onSubmit={(e) => e.preventDefault()}>
 					<div className="mb-6">
@@ -232,6 +257,12 @@ const Registration = () => {
 					onRegister={handleRegister}
 					transactionId={transactionId}
 					setTransactionId={setTransactionId}
+				/>
+			)}
+
+			{showSuccessPopup && (
+				<SuccessPopup
+					closePopup={() => setShowSuccessPopup(false)}
 				/>
 			)}
 		</section>
