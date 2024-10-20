@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import {
-	FaBook,
-	FaCode,
-	FaNetworkWired,
-	FaDatabase,
-	FaCogs,
-} from 'react-icons/fa';
+import { FaCode, FaNetworkWired, FaDatabase, FaCogs } from 'react-icons/fa';
 import ResourceDetail from './ResourceDetail';
 
 const Resources = () => {
@@ -84,6 +78,67 @@ const Resources = () => {
 				<h1 className="text-4xl font-bold">Hackathon Resources</h1>
 			</div>
 
+			{/* How to Prepare Section */}
+			<div className="max-w-4xl mx-auto mb-12 p-6 border-4 border-[#39FF14] rounded-lg shadow-lg bg-[#222222]">
+				<h2 className="text-3xl font-bold mb-6 text-[#39FF14]">
+					How to Prepare
+				</h2>
+				<p className="text-lg text-gray-300 mb-6 leading-relaxed">
+					Prioritizing subjects for placements is crucial. Here's a
+					priority order that will help you focus on the most
+					important topics for technical interviews:
+				</p>
+				<ol className="list-decimal text-left text-gray-300 pl-6 mb-6 space-y-4">
+					<li>
+						<span className="font-bold text-[#39FF14]">
+							Data Structures & Algorithms
+						</span>{' '}
+						- The foundation for placements. Start with basics, then
+						move to advanced topics.
+					</li>
+					<li>
+						<span className="font-bold text-[#39FF14]">
+							Object-Oriented Programming (OOPs)
+						</span>{' '}
+						- Essential for design and development roles.
+					</li>
+					<li>
+						<span className="font-bold text-[#39FF14]">
+							Operating Systems (OS)
+						</span>{' '}
+						- System-level knowledge, important for understanding
+						how software interacts with hardware.
+					</li>
+					<li>
+						<span className="font-bold text-[#39FF14]">
+							Database Management Systems (DBMS)
+						</span>{' '}
+						- Key for managing and retrieving data efficiently.
+					</li>
+					<li>
+						<span className="font-bold text-[#39FF14]">
+							System Design & Networks
+						</span>{' '}
+						- Critical for scaling and building reliable systems,
+						especially in senior roles.
+					</li>
+				</ol>
+				<p className="text-lg text-gray-300 mb-4 leading-relaxed">
+					<strong className="text-[#39FF14]">
+						Why GeeksforGeeks (GFG)?
+					</strong>{' '}
+					GFG provides a comprehensive collection of articles,
+					problems, and explanations across all these subjects. It is
+					widely recognized as the best platform to practice and
+					prepare for placements.
+				</p>
+				<p className="text-lg text-gray-300 leading-relaxed">
+					Focus on consistency and practice with real problems to
+					improve your chances of success!
+				</p>
+			</div>
+
+			{/* Resources Cards */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 				{resourcesList.map((resource, index) => (
 					<div
