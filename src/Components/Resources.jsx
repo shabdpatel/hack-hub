@@ -91,7 +91,8 @@ const Resources = () => {
 				<ol className="list-decimal text-left text-gray-300 pl-6 mb-6 space-y-4">
 					<li>
 						<span className="font-bold text-[#39FF14]">
-							What are Computer Science fundamental subjects?
+							Why are Computer Science fundamental subjects
+							important?
 						</span>{' '}
 						- While preparing for placements in tech companies,
 						students (especially non-CS background students) make a
@@ -100,7 +101,8 @@ const Resources = () => {
 						subjects. But instead, these subjects are actually very
 						easy to complete in a short period of time and also very
 						important at the same time, as they make the foundation
-						for the software development journey.
+						for the software development journey to make you a good
+						software devloper.
 					</li>
 					<li>
 						<span className="font-bold text-[#39FF14]">
