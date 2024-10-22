@@ -80,61 +80,69 @@ const Resources = () => {
 
 			{/* How to Prepare Section */}
 			<div className="max-w-4xl mx-auto mb-12 p-6 border-4 border-[#39FF14] rounded-lg shadow-lg bg-[#222222]">
-				<h2 className="text-3xl font-bold mb-6 text-[#39FF14]">
-					How to Prepare
-				</h2>
-				<p className="text-lg text-gray-300 mb-6 leading-relaxed">
-					Prioritizing subjects for placements is crucial. Here's a
-					priority order that will help you focus on the most
-					important topics for technical interviews:
+				<div className="flex justify-center w-full">
+					<h2 className="text-3xl font-bold mb-6 text-[#39FF14]">
+						How to Prepare
+					</h2>
+				</div>
+				<p className="text-lg text-[#FF0000] mb-6 leading-relaxed bg-gray-800 p-4 rounded-md text-center">
+					Read this guide completely before starting your preparation.
 				</p>
 				<ol className="list-decimal text-left text-gray-300 pl-6 mb-6 space-y-4">
 					<li>
 						<span className="font-bold text-[#39FF14]">
-							Data Structures & Algorithms
+							What are Computer Science fundamental subjects?
 						</span>{' '}
-						- The foundation for placements. Start with basics, then
-						move to advanced topics.
+						- While preparing for placements in tech companies,
+						students (especially non-CS background students) make a
+						huge mistake by focusing only on Data Structures &
+						Algorithms and completely skipping the CS fundamental
+						subjects. But instead, these subjects are actually very
+						easy to complete in a short period of time and also very
+						important at the same time, as they make the foundation
+						for the software development journey.
 					</li>
 					<li>
 						<span className="font-bold text-[#39FF14]">
-							Object-Oriented Programming (OOPs)
+							Priority order of these subjects for placements:
 						</span>{' '}
-						- Essential for design and development roles.
+						[OOPs &gt;&gt; (DBMS + SQL) &gt; OS &gt;&gt; CN &gt;
+						System Design.]
 					</li>
 					<li>
 						<span className="font-bold text-[#39FF14]">
-							Operating Systems (OS)
+							Best resource to prepare for these subjects:
 						</span>{' '}
-						- System-level knowledge, important for understanding
-						how software interacts with hardware.
+						- After carefully searching across the internet, we
+						found that there is no single resource that covers all
+						of these subjects comprehensively and to the right depth
+						for placements. Some YouTube channels teach in
+						unnecessary depth, while others don't go deep enough.
+						After careful observation and receiving guidance from
+						our alumni, we have come to the conclusion that
+						GeeksforGeeks (GFG) is the golden standard for these
+						subjects.
 					</li>
 					<li>
 						<span className="font-bold text-[#39FF14]">
-							Database Management Systems (DBMS)
+							Preparation guide:
 						</span>{' '}
-						- Key for managing and retrieving data efficiently.
-					</li>
-					<li>
-						<span className="font-bold text-[#39FF14]">
-							System Design & Networks
-						</span>{' '}
-						- Critical for scaling and building reliable systems,
-						especially in senior roles.
+						- Focus on mastering OOPs, OS, CN, DBMS & SQL, and
+						System Design to be fully prepared for placements.
 					</li>
 				</ol>
 				<p className="text-lg text-gray-300 mb-4 leading-relaxed">
 					<strong className="text-[#39FF14]">
-						Why GeeksforGeeks (GFG)?
+						Recommended videos before you start:
 					</strong>{' '}
-					GFG provides a comprehensive collection of articles,
-					problems, and explanations across all these subjects. It is
-					widely recognized as the best platform to practice and
-					prepare for placements.
+					Watch these videos to get a solid introduction before diving
+					deep into GFG and other materials. These are essential to
+					build your base and guide you through the key concepts.
 				</p>
 				<p className="text-lg text-gray-300 leading-relaxed">
-					Focus on consistency and practice with real problems to
-					improve your chances of success!
+					Remember, focus on consistency and practice solving real
+					problems to improve your chances of success in technical
+					interviews!
 				</p>
 			</div>
 
