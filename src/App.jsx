@@ -114,11 +114,11 @@ const App = () => {
 							</h2>
 							<ul className="text-lg sm:text-xl list-none space-y-4">
 								<li>
-									<strong>Registration Deadline:</strong> 31st
-									October
+									<strong>Registration Deadline:</strong> 4th
+									November
 								</li>
 								<li>
-									<strong>Hackathon Date:</strong> 4th
+									<strong>Hackathon Date:</strong> 12th
 									November, 2 PM
 								</li>
 								<li>
