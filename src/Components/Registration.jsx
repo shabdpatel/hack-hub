@@ -97,9 +97,16 @@ const SuccessPopup = ({ closePopup }) => {
 					We will verify your details, and once confirmed, your
 					participation will be proudly displayed on the dashboard.
 				</p>
+				<a
+					href="https://chat.whatsapp.com/JeyUGTS42JOAidPIxMeZ4P"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="mt-2 bg-[#25D366] text-black px-6 py-2 rounded-md hover:bg-[#1E865F] transition-colors duration-200">
+					Join WhatsApp Group for Updates
+				</a>
 				<button
 					onClick={closePopup}
-					className="mt-2 bg-[#39FF14] text-black px-6 py-2 rounded-md hover:bg-[#32e012] transition-colors duration-200">
+					className="mt-10 mx-20 bg-[#39FF14] text-black px-6 py-2 rounded-md hover:bg-[#32e012] transition-colors duration-200">
 					Close
 				</button>
 			</div>
