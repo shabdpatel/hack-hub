@@ -68,7 +68,7 @@ const App = () => {
 							<div className="max-w-4xl mx-auto">
 								<p className="text-lg text-center mb-8">
 									The hackathon is an offline exam that will
-									take place on <strong>4th November</strong>{' '}
+									take place on <strong>12th November</strong>{' '}
 									at NIT Hamirpur. The question paper will be
 									set by our alumni working at top tech
 									companies like Google, Microsoft, and
