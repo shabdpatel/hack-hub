@@ -88,8 +88,8 @@ const App = () => {
 								</p>
 								{/* Fairness Assurance */}
 								<p className="text-lg text-center mb-8">
-									<strong>Registration Fees:</strong>
-									&#x20B9;150 per participant, which will be
+									<strong>Registration Fees:</strong>{' '}
+									&#x20B9;99 per participant, which will be
 									redistributed among the winners as prizes.
 									This is a non-profit community, and the only
 									purpose of the registration fees is to
@@ -140,7 +140,7 @@ const App = () => {
 								</li>
 								<li>
 									<strong>Registration Fee:</strong>{' '}
-									&#x20B9;150
+									&#x20B9;99
 								</li>
 							</ul>
 						</section>

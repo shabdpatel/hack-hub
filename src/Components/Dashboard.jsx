@@ -29,9 +29,9 @@ const Dashboard = () => {
 	const [registrations, setRegistrations] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const participantsTarget = registrations.length; // Actual number of registrations
-	const prizePoolTarget = 150 * participantsTarget; // Calculate prize pool dynamically
+	const prizePoolTarget = 99 * participantsTarget; // Calculate prize pool dynamically
 
-	const targetDate = new Date('November 4, 2024 14:00:00').getTime();
+	const targetDate = new Date('November 12, 2024 14:00:00').getTime();
 	const [countdown, setCountdown] = useState({ days: 0, hours: 0 });
 
 	// Fetch participants data from Firebase
@@ -118,7 +118,7 @@ const Dashboard = () => {
 			{/* Countdown Timer */}
 			<div className="text-center mb-8">
 				<h2 className="text-2xl md:text-3xl font-bold">
-					Hackathon Date: 4th November 2024, 2 PM
+					Hackathon Date: 12th November 2024, 2 PM
 				</h2>
 				<div className="text-4xl md:text-5xl font-bold mt-4">
 					{countdown.days} days {countdown.hours} hours left
@@ -201,31 +201,31 @@ const Dashboard = () => {
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 					{loading
 						? Array(6)
-							.fill()
-							.map((_, index) => (
-								<SkeletonLoader key={index} />
-							))
+								.fill()
+								.map((_, index) => (
+									<SkeletonLoader key={index} />
+								))
 						: registrations.map((registration, index) => (
-							<div
-								key={index}
-								className="bg-[#333333] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
-								<FaUserCircle
-									size={40}
-									className="mx-auto mb-4 text-[#39FF14]"
-								/>
-								<h3 className="text-xl font-bold">
-									{registration.username.length > 12
-										? registration.username.substring(
-											0,
-											12
-										) + '...'
-										: registration.username}
-								</h3>
-								<p className="text-sm text-gray-400">
-									Participant #{index + 1}
-								</p>
-							</div>
-						))}
+								<div
+									key={index}
+									className="bg-[#333333] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+									<FaUserCircle
+										size={40}
+										className="mx-auto mb-4 text-[#39FF14]"
+									/>
+									<h3 className="text-xl font-bold">
+										{registration.username.length > 12
+											? registration.username.substring(
+													0,
+													12
+											  ) + '...'
+											: registration.username}
+									</h3>
+									<p className="text-sm text-gray-400">
+										Participant #{index + 1}
+									</p>
+								</div>
+						  ))}
 				</div>
 			</div>
 		</section>

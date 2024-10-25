@@ -6,104 +6,146 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 		'Object-Oriented Programming (OOPs)': {
 			videos: [
 				{
-					title: 'OOPs Concepts Tutorial',
-					link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
+					title: 'Introduction to Object-Oriented Programming (OOPs)',
+
+					link: 'https://www.youtube.com/watch?v=SiBw7os-_zI',
 				},
 				{
-					title: 'OOPs in JavaScript',
-					link: 'https://www.youtube.com/watch?v=zPHerhks2Vg',
+					title: 'OOPs in Java',
+					link: 'https://www.youtube.com/watch?v=bSrm9RXwBaI',
 				},
-			],
-			playlists: [
 				{
-					title: 'OOPs Playlist',
-					link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS',
+					title: 'OOPs in Python',
+					link: 'https://www.youtube.com/watch?v=Ej_02ICOIgs',
+				},
+				{
+					title: 'OOPs in C++',
+					link: 'https://www.youtube.com/watch?v=wN0x9eZLix4',
 				},
 			],
+
 			articles: [
 				{
-					title: 'Introduction to OOPs',
-					link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept/',
+					title: 'Python OOPs Concepts',
+					link: 'https://www.geeksforgeeks.org/python-oops-concepts/',
 				},
-			],
-			websites: [
 				{
-					title: 'MDN Web Docs - OOPs',
-					link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
+					title: 'Java OOPs Concepts',
+					link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/',
+				},
+				{
+					title: 'C++ OOPs Concepts',
+					link: 'https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/',
+				},
+				{
+					title: '30 OOPs questinos from GFG',
+					link: 'https://www.geeksforgeeks.org/oops-interview-questions/',
+				},
+				{
+					title: '40 OOPs questinos from InterviewBit',
+					link: 'https://www.interviewbit.com/oops-interview-questions/',
 				},
 			],
 		},
 		'Operating Systems (OS)': {
 			videos: [
 				{
-					title: 'OOPs Concepts Tutorial',
-					link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
+					title: 'Operating System In One Shot',
+					link: 'https://www.youtube.com/watch?v=8XBtAjKwCm4',
 				},
 				{
-					title: 'OOPs in JavaScript',
-					link: 'https://www.youtube.com/watch?v=zPHerhks2Vg',
+					title: 'Complete Operating Systems',
+					link: 'https://www.youtube.com/watch?v=3obEP8eLsCw',
 				},
 			],
-			playlists: [
-				{
-					title: 'OOPs Playlist',
-					link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS',
-				},
-			],
+
 			articles: [
 				{
-					title: 'Introduction to OOPs',
-					link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept/',
+					title: 'Notes on Operating Systems',
+					link: 'https://www.geeksforgeeks.org/last-minute-notes-operating-systems/',
 				},
-			],
-			websites: [
 				{
-					title: 'MDN Web Docs - OOPs',
-					link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
+					title: 'Interview Questinos on Operating Systems',
+					link: 'https://www.geeksforgeeks.org/operating-systems-interview-questions/',
 				},
 			],
 		},
 		'Database Management Systems (DBMS)': {
 			videos: [
 				{
-					title: 'OOPs Concepts Tutorial',
-					link: 'https://www.youtube.com/watch?v=6soT3DMBJGQ',
+					title: 'Complete DBMS',
+					link: 'https://www.youtube.com/watch?v=dl00fOOYLOM',
 				},
 				{
-					title: 'OOPs in JavaScript',
-					link: 'https://www.youtube.com/watch?v=zPHerhks2Vg',
+					title: 'SQL in one shot',
+					link: 'https://www.youtube.com/watch?v=hlGoQC332VM',
 				},
 			],
-			playlists: [
-				{
-					title: 'OOPs Playlist',
-					link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS',
-				},
-			],
+
 			articles: [
 				{
-					title: 'Introduction to OOPs',
-					link: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept/',
+					title: 'Leetcode questinos on SQL',
+					link: 'https://leetcode.com/studyplan/top-sql-50/',
 				},
-			],
-			websites: [
 				{
-					title: 'MDN Web Docs - OOPs',
-					link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects',
+					title: 'SQL Interview Questions GFG',
+					link: 'https://www.geeksforgeeks.org/sql-interview-questions/',
+				},
+				{
+					title: 'DBMS Interview Questions InterviewBit',
+					link: 'https://www.interviewbit.com/dbms-interview-questions/',
+				},
+				{
+					title: 'DBMS conceptes GFG',
+					link: 'https://www.geeksforgeeks.org/last-minute-notes-dbms/',
+				},
+				{
+					title: 'DBMS questinos GFG set-1',
+					link: 'https://www.geeksforgeeks.org/commonly-asked-dbms-interview-questions/',
+				},
+				{
+					title: 'DBMS questinos GFG set-2',
+					link: 'https://www.geeksforgeeks.org/commonly-asked-dbms-interview-questions-set-2/',
 				},
 			],
 		},
 		'Computer Networks': {
-			videos: [],
-			playlists: [],
-			articles: [],
-			websites: [],
+			videos: [
+				{
+					title: 'Computer Networks in 1 Video for Placement',
+					link: 'https://www.youtube.com/watch?v=qUBHLZEtS0M',
+				},
+			],
+
+			articles: [
+				{
+					title: 'Computer Networks Notes from GFG',
+					link: 'https://www.geeksforgeeks.org/last-minute-notes-computer-network/',
+				},
+				{
+					title: 'Interview Questinos from InterviewBit',
+					link: 'https://www.interviewbit.com/networking-interview-questions/',
+				},
+			],
 		},
 		'System Design': {
-			videos: [],
-			playlists: [],
-			articles: [],
-			websites: [],
+			videos: [
+				{
+					title: 'System Design for Beginners Course',
+					link: 'https://www.youtube.com/watch?v=m8Icp_Cid5o',
+				},
+			],
+
+			articles: [
+				{
+					title: '10 System Design Questinos from GFG',
+					link: 'https://www.geeksforgeeks.org/top-10-system-design-interview-questions-and-answers/',
+				},
+				{
+					title: 'Complete System Design from InterviewBit',
+					link: 'https://www.interviewbit.com/courses/system-design/',
+				},
+			],
 		},
 	};
 
@@ -140,6 +182,27 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 					<FaArrowLeft className="mr-2" /> Back to Resources
 				</button>
 
+				{/* Articles Section */}
+				<div className="mb-12">
+					<h2 className="text-2xl font-bold mb-4">Articles</h2>
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+						{resourceDetails[resourceTitle].articles.map(
+							(article, index) => (
+								<div
+									key={index}
+									className="bg-[#222222] p-6 rounded-lg shadow-lg">
+									<a
+										href={article.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="text-lg hover:underline">
+										{article.title}
+									</a>
+								</div>
+							)
+						)}
+					</div>
+				</div>
 				{/* Videos Section */}
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold mb-4">YouTube Videos</h2>
@@ -164,83 +227,6 @@ const ResourceDetail = ({ resourceTitle, handleBack }) => {
 										<p className="text-lg mt-2 hover:underline">
 											{video.title}
 										</p>
-									</a>
-								</div>
-							)
-						)}
-					</div>
-				</div>
-
-				{/* Playlists Section */}
-				<div className="mb-12">
-					<h2 className="text-2xl font-bold mb-4">
-						YouTube Playlists
-					</h2>
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails[resourceTitle].playlists.map(
-							(playlist, index) => (
-								<div
-									key={index}
-									className="bg-[#222222] p-6 rounded-lg shadow-lg">
-									<a
-										href={playlist.link}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="block mb-4">
-										<img
-											src={getYouTubePlaylistThumbnail(
-												playlist.link
-											)}
-											alt={playlist.title}
-											className="w-full h-48 object-cover rounded-md"
-										/>
-										<p className="text-lg mt-2 hover:underline">
-											{playlist.title}
-										</p>
-									</a>
-								</div>
-							)
-						)}
-					</div>
-				</div>
-
-				{/* Articles Section */}
-				<div className="mb-12">
-					<h2 className="text-2xl font-bold mb-4">Articles</h2>
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails[resourceTitle].articles.map(
-							(article, index) => (
-								<div
-									key={index}
-									className="bg-[#222222] p-6 rounded-lg shadow-lg">
-									<a
-										href={article.link}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-lg hover:underline">
-										{article.title}
-									</a>
-								</div>
-							)
-						)}
-					</div>
-				</div>
-
-				{/* Websites Section */}
-				<div className="mb-12">
-					<h2 className="text-2xl font-bold mb-4">Websites</h2>
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-						{resourceDetails[resourceTitle].websites.map(
-							(website, index) => (
-								<div
-									key={index}
-									className="bg-[#222222] p-6 rounded-lg shadow-lg">
-									<a
-										href={website.link}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-lg hover:underline">
-										{website.title}
 									</a>
 								</div>
 							)

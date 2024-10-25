@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { FaDownload } from "react-icons/fa";
+import { FaDownload } from 'react-icons/fa';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 // Firebase configuration
@@ -26,7 +26,12 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // QR Code Popup Component
-const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }) => {
+const QRCodePopup = ({
+	closePopup,
+	onRegister,
+	transactionId,
+	setTransactionId,
+}) => {
 	const handleDownloadQRCode = () => {
 		const qrCodeLink = document.createElement('a');
 		qrCodeLink.href = '/qr.png'; // Path to your QR code image
@@ -37,7 +42,9 @@ const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }
 	return (
 		<div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
 			<div className="bg-gray-800 p-6 rounded-lg text-center">
-				<h2 className="text-2xl font-semibold mb-2 text-[#39FF14]">Complete Payment via Google Pay</h2>
+				<h2 className="text-2xl font-semibold mb-2 text-[#39FF14]">
+					Complete Payment via Google Pay
+				</h2>
 				<img
 					src="/qr.png"
 					alt="Google Pay QR Code"
@@ -45,29 +52,32 @@ const QRCodePopup = ({ closePopup, onRegister, transactionId, setTransactionId }
 				/>
 				<button
 					onClick={handleDownloadQRCode}
-					className="mt-2 bg-[#39FF14] text-black px-4 py-2 mr-2 rounded-md"
-				>
-					<FaDownload className="inline mr-2" />QR Code
+					className="mt-2 bg-[#39FF14] text-black px-4 py-2 mr-2 rounded-md">
+					<FaDownload className="inline mr-2" />
+					QR Code
 				</button>
-				<p className="text-lg mb-2 text-[#39FF14]"><span className="font-semibold">Enter your transaction ID to verify your payment</span></p>
+				<p className="text-lg mb-2 text-[#39FF14]">
+					<span className="font-semibold">
+						Enter last 4 digits of UPI transaction ID to verify your
+						payment
+					</span>
+				</p>
 				<input
 					type="text"
 					placeholder="Enter Transaction ID"
 					value={transactionId}
-					onChange={(e) => setTransactionId(e.target.value)}
+					onChange={e => setTransactionId(e.target.value)}
 					className="w-full p-3 bg-[#333333] text-[#39FF14] border-none rounded-md mb-4"
 					required
 				/>
 				<button
 					onClick={onRegister}
-					className="mt-2 bg-[#39FF14] text-black px-4 py-2 mr-2 rounded-md"
-				>
+					className="mt-2 bg-[#39FF14] text-black px-4 py-2 mr-2 rounded-md">
 					Register
 				</button>
 				<button
 					onClick={closePopup}
-					className="mt-2 bg-gray-500 text-white px-4 py-2 ml-2 rounded-md"
-				>
+					className="mt-2 bg-gray-500 text-white px-4 py-2 ml-2 rounded-md">
 					Close
 				</button>
 			</div>
@@ -81,12 +91,15 @@ const SuccessPopup = ({ closePopup }) => {
 		<div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
 			<div className="bg-gray-800 p-6 sm:p-8 md:p-10 rounded-lg text-center max-w-lg w-full mx-4">
 				<p className="text-lg sm:text-xl md:text-2xl mb-4 text-[#39FF14]">
-					Congratulations! Your registration has been successfully received.<br />We will verify your details, and once confirmed, your participation will be proudly displayed on the dashboard.
+					Congratulations! Your registration has been successfully
+					received.
+					<br />
+					We will verify your details, and once confirmed, your
+					participation will be proudly displayed on the dashboard.
 				</p>
 				<button
 					onClick={closePopup}
-					className="mt-2 bg-[#39FF14] text-black px-6 py-2 rounded-md hover:bg-[#32e012] transition-colors duration-200"
-				>
+					className="mt-2 bg-[#39FF14] text-black px-6 py-2 rounded-md hover:bg-[#32e012] transition-colors duration-200">
 					Close
 				</button>
 			</div>
@@ -107,7 +120,7 @@ const Registration = () => {
 	const [transactionId, setTransactionId] = useState('');
 	const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
-	const handleChange = (e) => {
+	const handleChange = e => {
 		const { name, value } = e.target;
 		setFormData({
 			...formData,
@@ -164,9 +177,11 @@ const Registration = () => {
 					Register for the Hackathon
 				</h1>
 
-				<form onSubmit={(e) => e.preventDefault()}>
+				<form onSubmit={e => e.preventDefault()}>
 					<div className="mb-6">
-						<label htmlFor="name" className="block text-lg mb-2">
+						<label
+							htmlFor="name"
+							className="block text-lg mb-2">
 							Full Name
 						</label>
 						<input
@@ -181,7 +196,9 @@ const Registration = () => {
 					</div>
 
 					<div className="mb-6">
-						<label htmlFor="email" className="block text-lg mb-2">
+						<label
+							htmlFor="email"
+							className="block text-lg mb-2">
 							Email Address
 						</label>
 						<input
@@ -196,7 +213,9 @@ const Registration = () => {
 					</div>
 
 					<div className="mb-6">
-						<label htmlFor="username" className="block text-lg mb-2">
+						<label
+							htmlFor="username"
+							className="block text-lg mb-2">
 							Username
 						</label>
 						<input
@@ -211,7 +230,9 @@ const Registration = () => {
 					</div>
 
 					<div className="mb-6">
-						<label htmlFor="rollNo" className="block text-lg mb-2">
+						<label
+							htmlFor="rollNo"
+							className="block text-lg mb-2">
 							Roll Number
 						</label>
 						<input
@@ -226,7 +247,9 @@ const Registration = () => {
 					</div>
 
 					<div className="mb-6">
-						<label htmlFor="whatsapp" className="block text-lg mb-2">
+						<label
+							htmlFor="whatsapp"
+							className="block text-lg mb-2">
 							WhatsApp Number
 						</label>
 						<input
@@ -243,9 +266,8 @@ const Registration = () => {
 					<button
 						type="button"
 						onClick={handlePayClick}
-						className="w-full p-3 bg-[#39FF14] text-black font-semibold rounded-md"
-					>
-						Pay ₹150 to Register
+						className="w-full p-3 bg-[#39FF14] text-black font-semibold rounded-md">
+						Pay ₹99 to Register
 					</button>
 				</form>
 			</div>
@@ -260,9 +282,7 @@ const Registration = () => {
 			)}
 
 			{showSuccessPopup && (
-				<SuccessPopup
-					closePopup={() => setShowSuccessPopup(false)}
-				/>
+				<SuccessPopup closePopup={() => setShowSuccessPopup(false)} />
 			)}
 		</section>
 	);

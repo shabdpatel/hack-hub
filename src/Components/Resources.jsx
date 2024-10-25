@@ -115,36 +115,120 @@ const Resources = () => {
 						<span className="font-bold text-[#39FF14]">
 							Best resource to prepare for these subjects:
 						</span>{' '}
-						- After carefully searching across the internet, we
-						found that there is no single resource that covers all
-						of these subjects comprehensively and to the right depth
-						for placements. Some YouTube channels teach in
-						unnecessary depth, while others don't go deep enough.
-						After careful observation and receiving guidance from
-						our alumni, we have come to the conclusion that
-						GeeksforGeeks (GFG) is the golden standard for these
-						subjects.
+						- Here’s an improved version of your paragraph: After
+						extensive research, we found that no single resource
+						covers all these subjects comprehensively and to the
+						right depth for placements. Some YouTube channels delve
+						too deeply into topics, while others barely scratch the
+						surface. With guidance from our alumni and careful
+						observation, we have created a preparation guide for
+						each subject, tailored to the level of depth required.
+						We've also considered the weightage these subjects hold
+						in coding interviews and software development. As a
+						result, we identified GeeksforGeeks, InterviewBit, and
+						some selected YouTube channels as the gold standard for
+						mastering these subjects.
 					</li>
+
 					<li>
 						<span className="font-bold text-[#39FF14]">
 							Preparation guide:
 						</span>{' '}
-						- Focus on mastering OOPs, OS, CN, DBMS & SQL, and
-						System Design to be fully prepared for placements.
+						<ol>
+							<li>
+								<span className="font-bold text-[#39FF14]">
+									Object-Oriented Programming (OOPs) :
+								</span>{' '}
+								OOPs is a favorite topic for interviewers due to
+								its crucial role in software development. In
+								addition to asking direct questions on OOP
+								concepts, interviewers often present
+								object-oriented design problems, making it one
+								of the most important subjects to master. To
+								prepare for this subject, start with the
+								language-independent introduction video in the
+								resources section, then read the article for
+								your preferred language. After that, watch the
+								video specific to your chosen language, and
+								finally, go through all the provided practice
+								questions.
+							</li>
+							<li>
+								<span className="font-bold text-[#39FF14]">
+									DBMS + SQL :
+								</span>{' '}
+								No software interview is complete without
+								questions on DBMS, as it is fundamental to any
+								system. A particularly important aspect of DBMS
+								is SQL, where you may be asked to implement
+								various queries. It's crucial to practice SQL
+								problems on platforms like LeetCode to
+								strengthen your skills. For non-CS students,
+								DBMS might not be part of the regular
+								curriculum, so we recommend watching an in-depth
+								video by CodeHelp on YouTube and a comprehensive
+								SQL one-shot video by Apna College. After
+								watching these two resources, be sure to go
+								through the provided question sets and articles
+								to fully solidify your understanding of the
+								subject.
+							</li>
+							<li>
+								<span className="font-bold text-[#39FF14]">
+									Operating Systems (OS) :
+								</span>{' '}
+								Similar to DBMS, this subject is not typically
+								part of the standard curriculum for non-CS
+								students. For them, we recommend watching the
+								in-depth video by CodeHelp on YouTube. However,
+								if you find it too long, there’s also a shorter
+								video by Anuj Bhaiya. It’s up to you which one
+								you prefer to follow, but the most important
+								part is to go through the questions and articles
+								we’ve provided to strengthen your understanding.
+							</li>
+							<li>
+								<span className="font-bold text-[#39FF14]">
+									Computer Networks :
+								</span>{' '}
+								At the fresher level, interviewers typically
+								don't ask very in-depth questions on this
+								subject, but it’s essential to have a basic
+								understanding to avoid disappointing the
+								interviewer. Therefore, we’ve provided a short
+								video and a few basic articles to help you grasp
+								the fundamentals.
+							</li>
+							<li>
+								<span className="font-bold text-[#39FF14]">
+									System Design :
+								</span>{' '}
+								System design is generally an advanced topic
+								typically asked in senior-level interviews.
+								However, in recent years, some companies have
+								started including questions on this subject in
+								fresher-level interviews as well, particularly
+								low-level design questions, such as
+								object-oriented design, which I mentioned
+								earlier. To help you master this subject, we’ve
+								included some of the best resources available.
+								For object-oriented design, best way is building
+								mini projects that follow object-oriented design
+								principles.
+							</li>
+						</ol>
 					</li>
 				</ol>
 				<p className="text-lg text-gray-300 mb-4 leading-relaxed">
-					<strong className="text-[#39FF14]">
-						Recommended videos before you start:
-					</strong>{' '}
-					Watch these videos to get a solid introduction before diving
-					deep into GFG and other materials. These are essential to
-					build your base and guide you through the key concepts.
+					<strong className="text-[#39FF14]">Additional Tips:</strong>{' '}
 				</p>
 				<p className="text-lg text-gray-300 leading-relaxed">
-					Remember, focus on consistency and practice solving real
-					problems to improve your chances of success in technical
-					interviews!
+					-Please make notes as it will make revision easier in the
+					future.
+				</p>
+				<p className="text-lg text-gray-300 leading-relaxed">
+					-The provided articles and questions are much more important
+					than the videos.
 				</p>
 			</div>
 
